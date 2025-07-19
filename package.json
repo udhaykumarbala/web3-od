@@ -1,0 +1,33 @@
+{
+  "name": "web3-odyssey",
+  "version": "1.0.0",
+  "description": "Interactive Story-Based Web3 Onboarding Tool",
+  "main": "web3-odyssey/index.html",
+  "scripts": {
+    "start": "npx serve web3-odyssey",
+    "dev": "npx serve web3-odyssey -l 8000",
+    "deploy:vercel": "vercel --prod",
+    "deploy:netlify": "netlify deploy --prod --dir=web3-odyssey"
+  },
+  "keywords": [
+    "web3",
+    "blockchain",
+    "education",
+    "threejs",
+    "interactive",
+    "onboarding"
+  ],
+  "author": "Terragon Labs",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/udhaykumarbala/web3-odyssey.git"
+  },
+  "bugs": {
+    "url": "https://github.com/udhaykumarbala/web3-odyssey/issues"
+  },
+  "homepage": "https://web3odyssey.com",
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}
