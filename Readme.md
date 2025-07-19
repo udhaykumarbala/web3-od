@@ -86,6 +86,34 @@ npx serve
 http://localhost:8000/web3-odyssey/
 ```
 
+## 🚀 Deployment
+
+### GitHub Pages (Recommended)
+
+1. Enable GitHub Pages in your repository settings
+2. The included GitHub Action will automatically deploy on push to main
+3. Access your site at: `https://yourusername.github.io/web3-odyssey/`
+
+### Vercel
+
+1. Install Vercel CLI: `npm i -g vercel`
+2. Run `vercel` in the project root
+3. Or use the GitHub Action by adding these secrets:
+   - `VERCEL_TOKEN`
+   - `VERCEL_ORG_ID`
+   - `VERCEL_PROJECT_ID`
+
+### Netlify
+
+1. Drag and drop the `web3-odyssey` folder to Netlify
+2. Or use the GitHub Action by adding these secrets:
+   - `NETLIFY_AUTH_TOKEN`
+   - `NETLIFY_SITE_ID`
+
+### Manual Deployment
+
+Simply upload the contents of the `web3-odyssey` folder to any static hosting service.
+
 ## 🎯 Usage Guide
 
 ### Navigation
