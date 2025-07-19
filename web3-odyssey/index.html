@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web3 Odyssey: Journey from Web2 to Decentralized Freedom</title>
+    <meta name="description" content="An interactive 3D journey explaining Web3 concepts. Learn about blockchain, NFTs, DeFi, and DAOs through an engaging story!">
+    
+    <!-- Open Graph tags for social sharing -->
+    <meta property="og:title" content="Web3 Odyssey: Your Journey to Decentralized Freedom">
+    <meta property="og:description" content="Learn Web3 concepts through an interactive 3D adventure. No wallet needed!">
+    <meta property="og:image" content="/assets/images/preview.png">
+    <meta property="og:url" content="https://web3odyssey.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@web3odyssey">
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Three.js -->
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://unpkg.com/three@0.160.1/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.160.1/examples/jsm/"
+        }
+    }
+    </script>
+    
+    <!-- GSAP for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <h1>Web3 Odyssey</h1>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <p>Preparing your journey...</p>
+        </div>
+    </div>
+
+    <!-- Main Canvas -->
+    <canvas id="webgl-canvas"></canvas>
+
+    <!-- UI Overlay -->
+    <div id="ui-overlay" class="ui-overlay">
+        <!-- Story Text -->
+        <div id="story-container" class="story-container">
+            <div id="story-text" class="story-text"></div>
+            <button id="continue-btn" class="continue-btn">Continue</button>
+        </div>
+
+        <!-- Quiz Container -->
+        <div id="quiz-container" class="quiz-container hidden">
+            <h3 id="quiz-question"></h3>
+            <div id="quiz-options" class="quiz-options"></div>
+        </div>
+
+        <!-- Progress Indicator -->
+        <div class="progress-bar">
+            <div id="progress-fill" class="progress-fill"></div>
+            <span id="progress-text" class="progress-text">Act 1: The Web2 Walled City</span>
+        </div>
+
+        <!-- Interaction Hints -->
+        <div id="hint-container" class="hint-container">
+            <p id="hint-text">Click and drag to explore</p>
+        </div>
+
+        <!-- Share Screen -->
+        <div id="share-screen" class="share-screen hidden">
+            <h2>Congratulations, Web3 Pioneer!</h2>
+            <canvas id="badge-canvas" width="600" height="315"></canvas>
+            <div class="share-buttons">
+                <button id="share-x" class="share-btn">Share on X</button>
+                <button id="download-badge" class="share-btn">Download Badge</button>
+                <button id="replay-btn" class="share-btn">Play Again</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio Toggle -->
+    <button id="audio-toggle" class="audio-toggle" aria-label="Toggle Audio">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M11 5L6 9H2v6h4l5 4V5z"/>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/>
+        </svg>
+    </button>
+
+    <!-- Scripts -->
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
