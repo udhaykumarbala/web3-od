@@ -88,27 +88,25 @@ http://localhost:8000/web3-odyssey/
 
 ## 🚀 Deployment
 
+> **Note**: For GitHub Actions deployment workflows, see `DEPLOYMENT_WORKFLOWS.md` for manual setup instructions.
+
 ### GitHub Pages (Recommended)
 
 1. Enable GitHub Pages in your repository settings
-2. The included GitHub Action will automatically deploy on push to main
-3. Access your site at: `https://yourusername.github.io/web3-odyssey/`
+2. Select "Deploy from a branch" and choose your branch + `/web3-odyssey` folder
+3. Or set up GitHub Actions (see `DEPLOYMENT_WORKFLOWS.md`)
+4. Access your site at: `https://yourusername.github.io/repository-name/`
 
 ### Vercel
 
 1. Install Vercel CLI: `npm i -g vercel`
 2. Run `vercel` in the project root
-3. Or use the GitHub Action by adding these secrets:
-   - `VERCEL_TOKEN`
-   - `VERCEL_ORG_ID`
-   - `VERCEL_PROJECT_ID`
+3. Or connect your GitHub repo at [vercel.com](https://vercel.com)
 
 ### Netlify
 
-1. Drag and drop the `web3-odyssey` folder to Netlify
-2. Or use the GitHub Action by adding these secrets:
-   - `NETLIFY_AUTH_TOKEN`
-   - `NETLIFY_SITE_ID`
+1. Drag and drop the `web3-odyssey` folder to [netlify.com](https://netlify.com)
+2. Or connect your GitHub repo for automatic deployments
 
 ### Manual Deployment
 
